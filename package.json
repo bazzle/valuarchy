@@ -9,7 +9,6 @@
 	"scripts": {
 		"build:scss": "sass src/assets/styles/main.scss _site/assets/styles/main.css",
 		"build:11ty": "eleventy",
-		"build:11ty-prod": "eleventy --config=eleventy.prod.js",
 		"build": "yarn build:scss && yarn build:11ty",
 		"build-prod": "yarn build:scss && yarn build:11ty-prod",
 		"watch:scss": "sass --watch src/assets/styles/main.scss:_site/assets/styles/main.css",
