@@ -1,0 +1,6 @@
+@use "all-vars" as vars;
+
+.main-section{
+	padding-top: vars.$block-spacing;
+	padding-bottom: vars.$block-spacing;
+}

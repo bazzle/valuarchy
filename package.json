@@ -1,12 +1,23 @@
 {
-  "name": "Valuarchy",
-  "version": "1",
-  "description": "Valuarchy Website",
-  "main": "index.js",
-  "repository": "https://github.com/bazzle/valuarchy",
-  "author": "Barry Richards Brendan Guest",
-  "license": "MIT",
-  "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
-  }
+	"name": "valuarchy",
+	"version": "1",
+	"description": "Valuarchy Website",
+	"main": "index.js",
+	"repository": "https://github.com/bazzle/valuarchy",
+	"author": "Barry Richards Brendan Guest",
+	"license": "MIT",
+	"scripts": {
+		"build:scss": "sass src/assets/styles/main.scss _site/assets/styles/main.css",
+		"build:11ty": "eleventy",
+		"build:11ty-prod": "eleventy --config=eleventy.prod.js",
+		"build": "yarn build:scss && yarn build:11ty",
+		"build-prod": "yarn build:scss && yarn build:11ty-prod",
+		"watch:scss": "sass --watch src/assets/styles/main.scss:_site/assets/styles/main.css",
+		"start": "concurrently \"yarn watch:scss\" \"eleventy --serve\""
+	},
+	"dependencies": {
+		"@11ty/eleventy": "^3.1.2",
+		"concurrently": "^9.2.0",
+		"sass": "^1.65.0"
+	}
 }

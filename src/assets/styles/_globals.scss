@@ -1,0 +1,38 @@
+:root{
+	--color-bitcoin: #f7931a;
+	--color-bitcoin-a11y-text: #AF6408;
+	--color-bitcoin-a11y: #DB7900;
+	--color-white-solid: #ffffff;
+	--color-black-solid: #000000;
+	--color-black-off-solid: #151515;
+	--color-white-off-solid: #fafafa;
+
+	--color-foreground: var(--color-black-off-solid);
+	--color-foreground-inv: var(--color-white-solid);
+	--color-bg: var(--color-white-solid);
+	--color-bg-inv: var(--color-black-solid);
+	--color-bg-off-solid: var(--color-white-off-solid);
+	--color-accent: var(--color-bitcoin);
+	--color-accent-a11y: var(--color-bitcoin-a11y);
+	--color-accent-a11y-text: var(--color-bitcoin-a11y-text);
+	--color-accent-alt: var(--color-bitcoin-a11y);
+	--color-feint-line: rgb(0, 0, 0, .1);
+	--color-focus: var(--color-bitcoin-a11y);
+}
+
+body{
+	&.dark-mode{
+		--color-foreground: var(--color-white-solid);
+		--color-foreground-inv: var(--color-black-solid);
+		--color-bg: var(--color-black-solid);
+		--color-bg-inv: var(--color-white-off-solid);
+		--color-bg-off-solid: var(--color-black-off-solid);
+	}
+	@media print{
+		--color-foreground: var(--color-black-off-solid);
+		--color-foreground-inv: var(--color-white-solid);
+		--color-bg: var(--color-white-solid);
+		--color-bg-inv: var(--color-black-solid);
+		--color-bg-off-solid: var(--color-white-off-solid);
+	}
+}

@@ -1,0 +1,19 @@
+@use "all-vars" as vars;
+
+.header{
+	color: var(--color-foreground-inv);
+	background-color: var(--color-bg-inv);
+	padding-top: vars.$block-spacing--shallow;
+	padding-bottom: vars.$block-spacing--shallow;
+	a{
+		color: var(--color-foreground-inv);
+	}
+	&__logo-wrapper{
+		display: inline-block;
+		img{
+			width: 100%;
+			max-width: 200px;
+			height: auto;
+		}
+	}
+}

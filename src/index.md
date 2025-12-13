@@ -1,0 +1,8 @@
+---
+layout: base.njk
+title: Home
+---
+
+Have you noticed that the world is devolving? Things are getting worse, almost everywhere. More chaotic, more divisive, more expensive. No matter how you vote, it seems to get worse. Perhaps you see that there is no difference between political parties, so why bother voting? Your observations are correct – but why?
+
+Systems work as designed, not as intended. Democracy’s design has a significant flaw – the people who can promise anything to gain popularity, can also extract any cost to pay for those promises. This Funding Flaw is a conflict of interests that results in a socialist advantage and produces undesirable leadership. This has resulted in the ever expanding spending and size of government. Other ideologies have attempted to educate the voter base and dissuade them from electing destructive ideologies, however this has proven ineffective. This is because of the inherent design flaw of democracy, that people are unable to make informed decisions about the cost of promises and are vulnerable to emotional appeals. To combat this, what is needed is not another ideology, but a new system of choosing leadership and holding the government accountable. Valuarchy is a novel system that utilizes the properties of money and how people interact with this unique language to create informed voters and level the playing field for all ideologies to compete fairly. Government accountability, as is its root word, also relies on understand how people use money as a communication medium. This novel introduction of Valuarchy defines the fundamental elements needed to build this new system and it’s intuitive outcome.

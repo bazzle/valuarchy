@@ -1,0 +1,6 @@
+@use "all-vars" as vars;
+
+// SVG strokes
+.stroke-foreground{
+	stroke: var(--color-foreground);
+} 
