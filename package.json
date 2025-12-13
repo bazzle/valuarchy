@@ -1,0 +1,12 @@
+{
+  "name": "Valuarchy",
+  "version": "1",
+  "description": "Valuarchy Website",
+  "main": "index.js",
+  "repository": "https://github.com/bazzle/valuarchy",
+  "author": "Barry Richards Brendan Guest",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
