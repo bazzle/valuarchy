@@ -1,4 +1,4 @@
-@use "all-vars" as vars;
+@use "all-vars";
 
 p.outset-text{
 	line-height: 1.4;
@@ -15,13 +15,13 @@ h1, h2, h3, h4, h5, h6{
 }
 h4, h5, h6{
 	&:not([class]){
-		font-size: vars.$font-size-heading-small;
+		font-size: var(--font-size-heading-small);
 	}
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol{
 	&:not([class]){
-		margin-bottom: vars.$block-spacing--text;
+		margin-bottom: var(--block-spacing--text);
 	}
 	> *:last-child {
 		margin-bottom: 0!important;
@@ -29,10 +29,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 }
 p, li{
 	&:not([class]){
-		max-width: vars.$content-width;
+		max-width: var(--content-width);
 		@extend %text-std;
 		width: 100%;
-		max-width: vars.$content-width;
+		max-width: var(--content-width);
 		@media print{
 			max-width: 100rem;
 		}
