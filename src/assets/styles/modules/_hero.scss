@@ -1,0 +1,27 @@
+@use "../all-vars" as *;
+
+.hero{
+	background: linear-gradient(to bottom, #000, #2B2B2B);
+	position: relative;
+	padding-top: var(--block-spacing--shallow);
+	padding-bottom: var(--block-spacing--shallow);
+	margin-bottom: var(--block-spacing);
+	&::after{
+		content: '';
+		width: 100%;
+		height: 1px;
+		border-bottom: 1px dashed var(--color-foreground);
+		position: absolute;
+		bottom: -1rem;
+	}
+	&__inner{
+		@extend .content-container;
+	}
+	p{
+		@include text-display;
+		color: var(--color-foreground-inv);
+		span{
+			color: var(--color-accent);
+		}
+	}
+}

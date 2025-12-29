@@ -3,10 +3,6 @@ layout: base.njk
 title: Home
 ---
 
-<p class="lead-in">
-	Have you noticed that the world is devolving? Things are getting more chaotic, more divisive, more expensive. No matter how you vote, it seems to get worse. Perhaps you see that there is no difference between political parties so you don’t even bother voting. <span>Your observations are correct, you’re not alone.</span>
-</p>
-
 ## What if we could fix these problems with a simple idea?
 
 Systems work as designed, not as intended. Democracy’s design has a significant flaw – the people who can promise anything to gain popularity, can also extract any cost to pay for those promises. This Funding Flaw is a conflict of interests that results in a socialist advantage and produces leadership with undesirable qualities.

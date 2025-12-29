@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
 /* Useful helpers -------------------------------------- */
 /* Fonts ------------------------------------------------- */
-.merriweather-bold, h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
+.merriweather-bold, .hero p, h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -56,7 +56,7 @@ main {
   flex-direction: column;
 }
 
-.content-container, .header__inner {
+.content-container, .hero__inner, .header__inner {
   width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
@@ -150,7 +150,6 @@ body {
   margin: 0;
   background-color: var(--color-bg);
   color: var(--color-foreground);
-  color: var(--color-foreground);
   font-size: var(--font-size-std);
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
@@ -235,7 +234,6 @@ h1 > *:last-child, h2 > *:last-child, h3 > *:last-child, h4 > *:last-child, h5 >
 
 p:not([class]), li:not([class]) {
   max-width: var(--content-width);
-  color: var(--color-foreground);
   font-size: var(--font-size-std);
   line-height: 1.4;
   width: 100%;
@@ -346,6 +344,32 @@ pre code {
   background: var(--color-bg);
   z-index: 1;
   margin: 0;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #000, #2B2B2B);
+  position: relative;
+  padding-top: var(--block-spacing--shallow);
+  padding-bottom: var(--block-spacing--shallow);
+  margin-bottom: var(--block-spacing);
+}
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed var(--color-foreground);
+  position: absolute;
+  bottom: -1rem;
+}
+.hero p {
+  font-size: var(--font-size-display);
+  font-style: normal;
+  line-height: 1.2;
+  font-weight: 760;
+  color: var(--color-foreground-inv);
+}
+.hero p span {
+  color: var(--color-accent);
 }
 
 .main-section {

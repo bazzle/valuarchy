@@ -50,17 +50,15 @@
 
 @mixin text-display{
 	@extend .merriweather-bold;
-	color: var(--color-foreground);
 	font-size: var(--font-size-display);
 	font-style: normal;
-	line-height: 1;
+	line-height: 1.2;
 	font-weight: 760;
 }
 
 
 @mixin text-std{
 	@extend .merriweather-std;
-	color: var(--color-foreground);
 	font-size: var(--font-size-std);
 	line-height: 1.4;
 }
