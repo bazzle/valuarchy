@@ -1,13 +1,8 @@
 @use "../all-vars" as *;
 
-.lead-in{
-	@include text-intro;
-	margin-bottom: var(--block-spacing--text);
-}
-
 .small-print{
 	p{
-		@include text-miniscule;
+		@include text-tiny;
 		margin-bottom: 1em;
 	}
 }

@@ -1,5 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
 /* Useful helpers -------------------------------------- */
-/* Typography ------------------------------------------------- */
+/* Fonts ------------------------------------------------- */
+.merriweather-bold, h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.merriweather-std, .small-print p, p:not([class]), li:not([class]), body, button.button, a {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.merriweather-std strong, .small-print p strong, p:not([class]) strong, li:not([class]) strong, body strong, button.button strong, a strong, .merriweather-std b, .small-print p b, p:not([class]) b, li:not([class]) b, body b, button.button b, a b {
+  font-weight: 650;
+}
+body.light-mode .merriweather-std strong, body.light-mode .small-print p strong, .small-print body.light-mode p strong, body.light-mode p:not([class]) strong, body.light-mode li:not([class]) strong, body.light-mode body strong, body.light-mode button.button strong, body.light-mode a strong, body.light-mode .merriweather-std b, body.light-mode .small-print p b, .small-print body.light-mode p b, body.light-mode p:not([class]) b, body.light-mode li:not([class]) b, body.light-mode body b, body.light-mode button.button b, body.light-mode a b {
+  font-weight: 660;
+}
+@media print {
+  .merriweather-std strong, .small-print p strong, p:not([class]) strong, li:not([class]) strong, body strong, button.button strong, a strong, .merriweather-std b, .small-print p b, p:not([class]) b, li:not([class]) b, body b, button.button b, a b {
+    font-weight: 660;
+  }
+}
+
+.piazzolla-bold {
+  font-family: "Piazzolla", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* Type mixins ----------------------------------------------- */
 /* Box sizing rules */
 *,
@@ -87,32 +122,9 @@ body {
   margin: 0;
   background-color: var(--color-bg);
   color: var(--color-foreground);
-  font-family: var(--font-std);
+  color: var(--color-foreground);
   font-size: var(--font-size-std);
-  font-style: normal;
   line-height: 1.4;
-  font-weight: 380;
-}
-body.light-mode body {
-  font-weight: 460;
-}
-@media print {
-  body {
-    font-weight: 460;
-  }
-}
-body strong, body b {
-  font-weight: 650;
-}
-body.light-mode body strong, body.light-mode body b {
-  font-weight: 660;
-}
-@media print {
-  body strong, body b {
-    font-weight: 660;
-  }
-}
-body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -141,24 +153,6 @@ button {
 }
 button.button {
   color: var(--color-bitcoin-a11y-text);
-  text-decoration: underline;
-  text-underline-offset: 0.1em;
-  text-decoration-thickness: 0.05em;
-  font-style: normal;
-  font-weight: 500;
-}
-button.button:hover {
-  text-decoration: none;
-}
-body.light-mode button.button {
-  text-underline-offset: 0.15em;
-  text-decoration-thickness: 0.08em;
-}
-@media print {
-  button.button {
-    text-underline-offset: 0.15em;
-    text-decoration-thickness: 0.08em;
-  }
 }
 
 input, button, label, textarea {
@@ -167,24 +161,6 @@ input, button, label, textarea {
 
 a {
   color: var(--color-bitcoin-a11y-text);
-  text-decoration: underline;
-  text-underline-offset: 0.1em;
-  text-decoration-thickness: 0.05em;
-  font-style: normal;
-  font-weight: 500;
-}
-a:hover {
-  text-decoration: none;
-}
-body.light-mode a {
-  text-underline-offset: 0.15em;
-  text-decoration-thickness: 0.08em;
-}
-@media print {
-  a {
-    text-underline-offset: 0.15em;
-    text-decoration-thickness: 0.08em;
-  }
 }
 
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
@@ -213,19 +189,9 @@ p.outset-text {
 }
 
 h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
-  color: var(--color-accent-a11y);
-  font-family: var(--font-std);
+  color: var(--color-foreground);
   line-height: 1.2;
   font-size: var(--font-size-heading);
-  font-weight: 550;
-}
-body.light-mode h1:not([class]), body.light-mode h2:not([class]), body.light-mode h3:not([class]), body.light-mode h4:not([class]), body.light-mode h5:not([class]), body.light-mode h6:not([class]) {
-  font-weight: 600;
-}
-@media print {
-  h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
-    font-weight: 600;
-  }
 }
 
 h4:not([class]), h5:not([class]), h6:not([class]) {
@@ -241,32 +207,9 @@ h1 > *:last-child, h2 > *:last-child, h3 > *:last-child, h4 > *:last-child, h5 >
 
 p:not([class]), li:not([class]) {
   max-width: var(--content-width);
-  font-family: var(--font-std);
+  color: var(--color-foreground);
   font-size: var(--font-size-std);
-  font-style: normal;
   line-height: 1.4;
-  font-weight: 380;
-}
-body.light-mode p:not([class]), body.light-mode li:not([class]) {
-  font-weight: 460;
-}
-@media print {
-  p:not([class]), li:not([class]) {
-    font-weight: 460;
-  }
-}
-p:not([class]) strong, p:not([class]) b, li:not([class]) strong, li:not([class]) b {
-  font-weight: 650;
-}
-body.light-mode p:not([class]) strong, body.light-mode p:not([class]) b, body.light-mode li:not([class]) strong, body.light-mode li:not([class]) b {
-  font-weight: 660;
-}
-@media print {
-  p:not([class]) strong, p:not([class]) b, li:not([class]) strong, li:not([class]) b {
-    font-weight: 660;
-  }
-}
-p:not([class]), li:not([class]) {
   width: 100%;
   max-width: var(--content-width);
 }
@@ -394,51 +337,10 @@ main {
   padding-bottom: var(--block-spacing);
 }
 
-.lead-in {
-  font-family: var(--font-std);
-  font-size: var(--font-size-body-intro);
-  line-height: 1.2;
-  font-weight: 650;
-}
-body.light-mode .lead-in {
-  font-weight: 750;
-}
-@media print {
-  .lead-in {
-    font-weight: 750;
-  }
-}
-.lead-in {
-  margin-bottom: var(--block-spacing--text);
-}
-
 .small-print p {
-  font-family: var(--font-std);
-  font-size: var(--font-size-miniscule);
-  font-style: normal;
+  color: var(--color-foreground);
+  font-size: var(--font-size-std);
   line-height: 1.4;
-  font-weight: 400;
-}
-body.light-mode .small-print p {
-  font-weight: 500;
-}
-@media print {
-  .small-print p {
-    font-weight: 500;
-  }
-}
-.small-print p strong, .small-print p b {
-  font-weight: 500;
-}
-body.light-mode .small-print p strong, body.light-mode .small-print p b {
-  font-weight: 600;
-}
-@media print {
-  .small-print p strong, .small-print p b {
-    font-weight: 600;
-  }
-}
-.small-print p {
   margin-bottom: 1em;
 }
 

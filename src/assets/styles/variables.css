@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 :root{
 	/* Colors */
 	--color-bitcoin: #f7931a;
@@ -54,11 +52,6 @@
 	--font-size-blocky: clamp(1.472rem, 1.6vw, 1.6rem);
 	--font-size-tiny: 1.3rem;
 	--font-size-miniscule: 1.25rem;
-
-	--font-body: "Inter", sans-serif;
-	--font-std: "Inter", sans-serif;
-	--font-display: "Inter", sans-serif;
-	--font-blocky: "Inter", sans-serif;
 }
 
 body.dark-mode{
