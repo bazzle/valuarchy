@@ -41,7 +41,7 @@
 .piazzolla-bold {
   font-family: "Piazzolla", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -119,4 +119,34 @@
 	color: var(--color-foreground);
 	font-size: var(--font-size-std);
 	line-height: 1.4;
+}
+
+
+main{
+	min-height: 80vh;
+}
+
+/* Layout ----------------------------------------------- */
+
+.container{
+	position: relative;
+	width: 100%;
+	max-width: var(--site-width-margins);
+	margin: 0 auto;
+	padding-left: var(--gutter-padding);
+	padding-right: var(--gutter-padding);
+	&--vertical-fill{
+		height:100%;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.content-container{
+	width: 100%;
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding-left: var(--gutter-padding);
+	padding-right: var(--gutter-padding);
 }

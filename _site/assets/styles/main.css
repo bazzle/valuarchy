@@ -28,14 +28,42 @@ body.light-mode .merriweather-std strong, body.light-mode .small-print p strong,
   }
 }
 
-.piazzolla-bold {
+.piazzolla-bold, .header__logo-wrapper {
   font-family: "Piazzolla", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
 }
 
 /* Type mixins ----------------------------------------------- */
+main {
+  min-height: 80vh;
+}
+
+/* Layout ----------------------------------------------- */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: var(--site-width-margins);
+  margin: 0 auto;
+  padding-left: var(--gutter-padding);
+  padding-right: var(--gutter-padding);
+}
+.container--vertical-fill {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container, .header__inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding-left: var(--gutter-padding);
+  padding-right: var(--gutter-padding);
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -242,33 +270,6 @@ pre code {
   border: 1px solid var(--color-feint-line);
 }
 
-main {
-  min-height: 80vh;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  max-width: var(--site-width-margins);
-  margin: 0 auto;
-  padding-left: var(--gutter-padding);
-  padding-right: var(--gutter-padding);
-}
-.container--vertical-fill {
-  height: 100%;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.content-container {
-  width: 100%;
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding-left: var(--gutter-padding);
-  padding-right: var(--gutter-padding);
-}
-
 .stroke-foreground {
   stroke: var(--color-foreground);
 }
@@ -315,21 +316,36 @@ main {
 }
 
 .header {
-  color: var(--color-foreground-inv);
-  background-color: var(--color-bg-inv);
-  padding-top: var(--block-spacing--shallow);
-  padding-bottom: var(--block-spacing--shallow);
+  color: var(--color-foreground);
+  background-color: var(--color-bg);
+  position: relative;
 }
-.header a {
-  color: var(--color-foreground-inv);
+.header::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px dashed var(--color-foreground);
+}
+.header__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 8rem;
+  height: auto;
 }
 .header__logo-wrapper {
-  display: inline-block;
-}
-.header__logo-wrapper img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  border: 2px solid var(--color-foreground);
+  padding: 0.8em 1.2em;
+  flex-grow: 0;
+  width: auto;
+  background: var(--color-bg);
+  z-index: 1;
+  margin: 0;
 }
 
 .main-section {
