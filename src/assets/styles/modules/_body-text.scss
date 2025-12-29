@@ -1,0 +1,12 @@
+@use "../all-vars" as *;
+
+.lead-in{
+	@include text-intro;
+	margin-bottom: var(--block-spacing--text);
+}
+
+.small-print{
+	p{
+		@include text-
+	}
+}

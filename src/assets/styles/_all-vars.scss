@@ -12,14 +12,14 @@
 /* Typography ------------------------------------------------- */
 /* Type mixins ----------------------------------------------- */
 
-%body-weight-bold{
+@mixin body-weight-bold{
 	font-weight: 600;
 	@include light-mode-wrapper{
 		font-weight: 700;
 	}
 }
 
-%text-display{
+@mixin text-display{
 	font-family: var(--font-display);
 	font-size: var(--font-size-display);
 	font-style: normal;
@@ -31,7 +31,7 @@
 	}
 }
 
-%text-display-medium{
+@mixin text-display-medium{
 	font-family: var(--font-display);
 	font-size: var(--font-size-display-medium);
 	font-style: normal;
@@ -43,7 +43,7 @@
 	}
 }
 
-%text-display-small{
+@mixin text-display-small{
 	font-family: var(--font-display);
 	font-size: var(--font-size-display-small);
 	font-style: normal;
@@ -59,7 +59,7 @@
 	}
 }
 
-%text-std{
+@mixin text-std{
 	font-family: var(--font-std);
 	font-size: var(--font-size-std);
 	font-style: normal;
@@ -77,7 +77,7 @@
 	}
 }
 
-%text-link-defaults{
+@mixin text-link-defaults{
 	color: var(--color-bitcoin-a11y-text);
 	text-decoration: underline;
 	text-underline-offset: 0.1em;
@@ -93,14 +93,14 @@
 	}
 }
 
-%text-link{
+@mixin text-link{
 	font-family: var(--font-body);
-	@extend %text-link-defaults;
-	@extend %body-weight-bold;
+	@include text-link-defaults;
+	@include body-weight-bold;
 }
 
-%standalone-link{
-	@extend %text-link;
+@mixin standalone-link{
+	@include text-link;
 	font-size: var(--font-size-std);
 	font-family: var(--font-std);
 	color: var(--color-accent);
@@ -119,24 +119,24 @@
 	}
 }
 
-%standalone-link-inactive{
+@mixin standalone-link-inactive{
 	font-family: var(--font-std);
 	color: var(--color-foreground);
 	font-style: normal;
-	@extend %body-weight-bold;
+	@include body-weight-bold;
 	@media print{
 		font-weight: 700;
 	}
 }
 
-%text-heading-defaults{
+@mixin text-heading-defaults{
 	color: var(--color-accent-a11y);
 	font-family: var(--font-std);
 	line-height:1.2;
 }
 
-%text-heading{
-	@extend %text-heading-defaults;
+@mixin text-heading{
+	@include text-heading-defaults;
 	font-size: var(--font-size-heading);
 	font-variation-settings: 'opsz' 20;
 	font-weight: 550;
@@ -145,8 +145,8 @@
 	}
 }
 
-%text-heading--chunky{
-	@extend %text-heading-defaults;
+@mixin text-heading--chunky{
+	@include text-heading-defaults;
 	font-size: var(--font-size-heading);
 	font-variation-settings: 'opsz' 20;
 	font-weight: 650;
@@ -155,8 +155,8 @@
 	}
 }
 
-%text-heading-thin{
-	@extend %text-heading-defaults;
+@mixin text-heading-thin{
+	@include text-heading-defaults;
 	font-size: var(--font-size-heading);
 	font-variation-settings: 'opsz' 28;
 	font-weight: 350;
@@ -166,8 +166,8 @@
 
 }
 
-%text-heading-small{
-	@extend %text-heading-defaults;
+@mixin text-heading-small{
+	@include text-heading-defaults;
 	font-size: var(--font-size-heading-small);
 	font-variation-settings: 'opsz' 16;
 	font-weight: 550;
@@ -176,7 +176,7 @@
 	}
 }
 
-%text-intro{
+@mixin text-intro{
 	font-family: var(--font-std);
 	font-size: var(--font-size-body-intro);
 	line-height: 1.2;
@@ -187,7 +187,18 @@
 	}
 }
 
-%text-medium{
+@mixin text-intro{
+	font-family: var(--font-std);
+	font-size: var(--font-size-tiny);
+	line-height: 1.2;
+	font-variation-settings: 'opsz' 26;
+	font-weight: 650;
+	@include light-mode-wrapper{
+		font-weight: 750;
+	}
+}
+
+@mixin text-medium{
 	font-family: var(--font-std);
 	font-size: var(--font-size-medium);
 	font-style: normal;
@@ -199,7 +210,7 @@
 	}
 }
 
-%text-blocky{
+@mixin text-blocky{
 	font-family: var(--font-blocky);
 	font-style: normal;
 	text-transform: uppercase;
@@ -215,7 +226,7 @@
 	}
 }
 
-%text-blocky-bold{
+@mixin text-blocky-bold{
 	font-family: var(--font-blocky);
 	font-style: normal;
 	text-transform: uppercase;
@@ -229,7 +240,7 @@
 	}
 }
 
-%text-tiny{
+@mixin text-tiny{
 	font-size: var(--font-size-tiny);
 	font-family: var(--font-std);
 	letter-spacing: .02em;
@@ -246,7 +257,7 @@
 	}
 }
 
-%text-miniscule{
+@mixin text-miniscule{
 	font-family: var(--font-std);
 	font-size: var(--font-size-miniscule);
 	font-style: normal;

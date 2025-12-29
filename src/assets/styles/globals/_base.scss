@@ -1,4 +1,4 @@
-@use "all-vars";
+@use "../all-vars" as *;
 
 html{
 	font-size: 10px;
@@ -14,7 +14,7 @@ body{
 	margin: 0;
 	background-color: var(--color-bg);
 	color: var(--color-foreground);
-	@extend %text-std;
+	@include text-std;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -41,7 +41,7 @@ button{
 	text-decoration: 0;
 	cursor: pointer;
 	&.button{
-		@extend %text-link-defaults;
+		@include text-link-defaults;
 	}
 }
 
@@ -50,7 +50,7 @@ input, button, label, textarea{
 }
 
 a{
-	@extend %text-link-defaults;
+	@include text-link-defaults;
 }
 
 a, button, input, textarea, select{

@@ -1,4 +1,4 @@
-@use "all-vars";
+@use "../all-vars" as *;
 
 p.outset-text{
 	line-height: 1.4;
@@ -10,7 +10,7 @@ p.outset-text{
 
 h1, h2, h3, h4, h5, h6{
 	&:not([class]){
-		@extend %text-heading;
+		@include text-heading;
 	}
 }
 h4, h5, h6{
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 p, li{
 	&:not([class]){
 		max-width: var(--content-width);
-		@extend %text-std;
+		@include text-std;
 		width: 100%;
 		max-width: var(--content-width);
 		@media print{

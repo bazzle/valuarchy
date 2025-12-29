@@ -1,11 +1,17 @@
+// Variables, mixins, placeholders
+@use "all-vars";
+
 // Globals
-@use "reset";
-@use "base";
-@use "typography";
-@use "layout";
-@use "helpers";
+@use "globals/reset";
+@use "globals/base";
+@use "globals/typography";
+@use "globals/layout";
+@use "globals/helpers";
 
 // Components
-@use "header";
-@use "main-section";
-@use "backtop";
+@use "components/backtop";
+
+// Modules
+@use "modules/header";
+@use "modules/main-section";
+@use "modules/body-text";
