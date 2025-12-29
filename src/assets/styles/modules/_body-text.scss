@@ -8,5 +8,6 @@
 .small-print{
 	p{
 		@include text-miniscule;
+		margin-bottom: 1em;
 	}
 }

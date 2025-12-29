@@ -6,6 +6,7 @@ export function backTop(){
 		});
 	}
 	const backTopButton = document.getElementById('backTop');
+	if (!backTopButton) return;
 	backTopButton.addEventListener('click', handleClick);
 }
 

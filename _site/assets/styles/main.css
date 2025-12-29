@@ -363,6 +363,14 @@ main {
   opacity: 1;
 }
 
+.button {
+  background: var(--color-foreground);
+  color: white;
+  padding: 1em;
+  display: inline-block;
+  text-decoration: none;
+}
+
 .header {
   color: var(--color-foreground-inv);
   background-color: var(--color-bg-inv);
@@ -429,6 +437,13 @@ body.light-mode .small-print p strong, body.light-mode .small-print p b {
   .small-print p strong, .small-print p b {
     font-weight: 600;
   }
+}
+.small-print p {
+  margin-bottom: 1em;
+}
+
+.donate {
+  margin-top: var(--block-spacing);
 }
 
 /*# sourceMappingURL=main.css.map */
