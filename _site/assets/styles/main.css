@@ -63,7 +63,7 @@ main {
   flex-direction: column;
 }
 
-.content-container, .download__inner, .hero__inner, .header__inner {
+.content-container, .donate__inner, .download__inner, .hero__inner, .header__inner {
   width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
@@ -72,7 +72,7 @@ main {
 }
 
 /* Typography ----------------------------------------------- */
-.section-head, .body-content h2, .download h2 {
+.section-head, .donate h2, .body-content h2, .download h2 {
   text-decoration: underline;
   text-decoration-color: var(--color-accent);
   text-decoration-thickness: 3px;
@@ -444,6 +444,30 @@ pre code {
 }
 
 .donate {
+  background: linear-gradient(to bottom, #F8F8F8, #ffffff);
+  position: relative;
+  padding-top: var(--block-spacing--shallow);
+  padding-bottom: var(--block-spacing--shallow);
+  margin-top: var(--block-spacing);
+  margin-bottom: var(--block-spacing);
+}
+.donate::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed var(--color-foreground);
+  position: absolute;
+  top: -1rem;
+}
+.donate::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed var(--color-foreground);
+  position: absolute;
+  bottom: -1rem;
+}
+.donate__widget {
   margin-top: var(--block-spacing);
 }
 
