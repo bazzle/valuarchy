@@ -1,17 +1,17 @@
 ---
 layout: base.njk
-title: Home
+title: Valuarchy – A Monetary Value Leadership System
 ---
 
 ## What if we could fix these problems with a simple idea?
 
-Systems work as designed, not as intended. Democracy’s design has a significant flaw – the people who can promise anything to gain popularity, can also extract any cost to pay for those promises. This Funding Flaw is a conflict of interests that results in a socialist advantage and produces leadership with undesirable qualities.
+**Systems work as designed, not as intended. Democracy’s design has a significant flaw – the people who can promise anything to gain popularity, can also extract any cost to pay for those promises. This Funding Flaw is a conflict of interests that results in a socialist advantage and produces leadership with undesirable qualities.**
 
 The Funding Flaw has resulted in the ever expanding spending and size of government, regardless of ideology or era in which it is tried. Democracy does not enable people to make informed decisions, so promises are judged only on emotional appeals.
 
 Other ideologies have attempted to compete socialists virtue signalling through reason, however this has been ineffective, and it is the wrong approach. What is needed is a new system that corrects these flaws.
 
-We need to give the people the information they need to make an informed decision.
+**We need to give the people the information they need to make an informed decision.**
 
 We need a system which does not give any one ideology an advantage, but rather provides a fair playing field to compete.
 
