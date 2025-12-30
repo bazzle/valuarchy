@@ -1,8 +1,0 @@
-@use "../all-vars" as *;
-
-.small-print{
-	p{
-		@include text-tiny;
-		margin-bottom: 1em;
-	}
-}

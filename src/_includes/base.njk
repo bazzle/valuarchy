@@ -12,8 +12,9 @@
 		<main>
 		{% include "hero.njk" %}
 		<div class="content-container">
-			{{ content | safe }}
-			{% include "donate.njk" %}
+			<div class="body-content">
+				{{ content | safe }}
+			</div>
 		</div>
 		</main>
 		{% include "footer.njk" %}

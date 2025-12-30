@@ -38,6 +38,12 @@
 }
 
 // <weight>: Use a value from 100 to 900
+.piazzolla-std {
+  font-family: "Piazzolla", serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+}
 .piazzolla-bold {
   font-family: "Piazzolla", serif;
   font-optical-sizing: auto;
@@ -87,7 +93,7 @@
 }
 
 @mixin text-heading-defaults{
-	@extend .merriweather-bold;
+	@extend .piazzolla-std;
 	color: var(--color-foreground);
 	line-height:1.2;
 }
@@ -103,13 +109,10 @@
 }
 
 @mixin text-blocky{
-	font-family: sans-serif;
-	font-style: normal;
+	@extend .merriweather-bold;
 	text-transform: uppercase;
-	color: var(--color-foreground);
 	font-size: var(--font-size-blocky);
 	letter-spacing: .03em;
-	font-weight: bold;
 }
 
 @mixin text-tiny{
@@ -147,4 +150,13 @@ main{
 	margin: 0 auto;
 	padding-left: var(--gutter-padding);
 	padding-right: var(--gutter-padding);
+}
+
+/* Typography ----------------------------------------------- */
+
+.section-head{
+	text-decoration: underline;
+	text-decoration-color: var(--color-accent);
+	text-decoration-thickness: 3px;
+	text-align: center;
 }

@@ -39,7 +39,7 @@
 	/* Typography */
 	--font-size-display: clamp(2rem, 3.2vw, 3.5rem);
 
-	--font-size-heading: clamp(2.66rem, 2.8vw, 2.8rem);
+	--font-size-heading: clamp(2rem, 3vw, 2.6rem);
 	--font-size-heading-large: clamp(3.23rem, 3.4vw, 3.4rem);
 	--font-size-heading-small: clamp(2.09rem, 2.2vw, 2.2rem);
 

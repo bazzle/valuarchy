@@ -1,0 +1,17 @@
+@use "../all-vars" as *;
+
+.body-content{
+	h2{
+		@extend .section-head;
+	}
+	h3, h4, h5, h6{
+		text-align: left;
+	}
+}
+
+.small-print{
+	p{
+		@include text-tiny;
+		margin-bottom: 1em;
+	}
+}
