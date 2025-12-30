@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
+
 /* Useful helpers -------------------------------------- */
 
 @mixin light-mode-wrapper {
@@ -9,62 +11,24 @@
 	}
 }
 
-/* Typography ------------------------------------------------- */
-/* Type mixins ----------------------------------------------- */
+/* Fonts ------------------------------------------------- */
 
-@mixin body-weight-bold{
+// <weight>: Use a value from 300 to 900
+.merriweather-bold{
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
 	font-weight: 600;
-	@include light-mode-wrapper{
-		font-weight: 700;
-	}
-}
-
-@mixin text-display{
-	font-family: var(--font-display);
-	font-size: var(--font-size-display);
 	font-style: normal;
-	line-height: 1;
-	font-weight: 760;
-	@include light-mode-wrapper{
-		font-weight: 780;
-	}
+	font-variation-settings:
+		"wdth" 100;
 }
-
-@mixin text-display-medium{
-	font-family: var(--font-display);
-	font-size: var(--font-size-display-medium);
+.merriweather-std{
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
 	font-style: normal;
-	line-height: 1;
-	font-weight: 760;
-	@include light-mode-wrapper{
-		font-weight: 780;
-	}
-}
-
-@mixin text-display-small{
-	font-family: var(--font-display);
-	font-size: var(--font-size-display-small);
-	font-style: normal;
-	line-height: 1.1;
-	font-weight: 500;
-	@include light-mode-wrapper{
-		font-weight: 600;
-	}
-	@media print{
-		font-size: 3rem;
-		font-weight: 600;
-	}
-}
-
-@mixin text-std{
-	font-family: var(--font-std);
-	font-size: var(--font-size-std);
-	font-style: normal;
-	line-height: 1.4;
-	font-weight: 380;
-	@include light-mode-wrapper{
-		font-weight: 460;
-	}
+	font-variation-settings:
+		"wdth" 100;
 	strong, b{
 		font-weight: 650;
 		@include light-mode-wrapper{
@@ -73,179 +37,126 @@
 	}
 }
 
-@mixin text-link-defaults{
-	color: var(--color-bitcoin-a11y-text);
-	text-decoration: underline;
-	text-underline-offset: 0.1em;
-	text-decoration-thickness: .05em;
+// <weight>: Use a value from 100 to 900
+.piazzolla-std {
+  font-family: "Piazzolla", serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+}
+.piazzolla-bold {
+  font-family: "Piazzolla", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Type mixins ----------------------------------------------- */
+
+
+@mixin text-display{
+	@extend .merriweather-bold;
+	font-size: var(--font-size-display);
 	font-style: normal;
-	font-weight: 500;
-	&:hover{
-		text-decoration: none;
-	}
-	@include light-mode-wrapper{
-		text-underline-offset: .15em;
-		text-decoration-thickness: .08em;
-	}
+	line-height: 1.2;
+	font-weight: 760;
+}
+
+
+@mixin text-std{
+	@extend .merriweather-std;
+	font-size: var(--font-size-std);
+	line-height: 1.4;
+}
+
+@mixin text-link-defaults{
+	@extend .merriweather-std;
+	color: var(--color-bitcoin-a11y-text);
 }
 
 @mixin text-link{
-	font-family: var(--font-body);
 	@include text-link-defaults;
-	@include body-weight-bold;
-}
-
-@mixin standalone-link{
-	@include text-link;
-	font-size: var(--font-size-std);
-	font-family: var(--font-std);
-	color: var(--color-accent);
 	text-decoration: underline;
-	text-underline-offset: 0.1em;
-	text-decoration-thickness: .05em;
-	font-style: normal;
-	font-weight: 550;
-	@include light-mode-wrapper{
-		font-weight: 650;
-		text-underline-offset: .15em;
-		text-decoration-thickness: .08em;
-	}
-	&:hover{
+	&:hover, &:focus-visible{
 		text-decoration: none;
 	}
 }
 
-@mixin standalone-link-inactive{
-	font-family: var(--font-std);
-	color: var(--color-foreground);
-	font-style: normal;
-	@include body-weight-bold;
-	@media print{
-		font-weight: 700;
+@mixin standalone-link{
+	@include text-link-defaults;
+	text-decoration: underline;
+	text-underline-offset: 0.1em;
+	text-decoration-thickness: .05em;
+	&:hover, &:focus-visible{
+		text-decoration: none;
 	}
 }
 
 @mixin text-heading-defaults{
-	color: var(--color-accent-a11y);
-	font-family: var(--font-std);
+	@extend .piazzolla-std;
+	color: var(--color-foreground);
 	line-height:1.2;
 }
 
 @mixin text-heading{
 	@include text-heading-defaults;
 	font-size: var(--font-size-heading);
-	font-weight: 550;
-	@include light-mode-wrapper{
-		font-weight: 600;
-	}
-}
-
-@mixin text-heading--chunky{
-	@include text-heading-defaults;
-	font-size: var(--font-size-heading);
-	font-weight: 650;
-	@include light-mode-wrapper{
-		font-weight: 750;
-	}
-}
-
-@mixin text-heading-thin{
-	@include text-heading-defaults;
-	font-size: var(--font-size-heading);
-	font-weight: 350;
-	@include light-mode-wrapper{
-		font-weight: 450;
-	}
-
 }
 
 @mixin text-heading-small{
 	@include text-heading-defaults;
 	font-size: var(--font-size-heading-small);
-	font-weight: 550;
-	@include light-mode-wrapper{
-		font-weight: 600;
-	}
-}
-
-@mixin text-intro{
-	font-family: var(--font-std);
-	font-size: var(--font-size-body-intro);
-	line-height: 1.2;
-	font-weight: 650;
-	@include light-mode-wrapper{
-		font-weight: 750;
-	}
-}
-
-@mixin text-medium{
-	font-family: var(--font-std);
-	font-size: var(--font-size-medium);
-	font-style: normal;
-	line-height: 1.6;
-	font-weight: 450;
-	@include light-mode-wrapper{
-		font-weight: 550;
-	}
 }
 
 @mixin text-blocky{
-	font-family: var(--font-blocky);
-	font-style: normal;
+	@extend .merriweather-bold;
 	text-transform: uppercase;
 	font-size: var(--font-size-blocky);
 	letter-spacing: .03em;
-	font-weight: 420;
-	@include light-mode-wrapper{
-		font-weight: 520;
-	}
-	@media print{
-		font-size: 1.7rem;
-	}
-}
-
-@mixin text-blocky-bold{
-	font-family: var(--font-blocky);
-	font-style: normal;
-	text-transform: uppercase;
-	font-size: var(--font-size-blocky);
-	letter-spacing: .03em;
-	font-weight: 550;
-	@include light-mode-wrapper{
-		font-weight: 650;
-		letter-spacing: .06em;
-	}
 }
 
 @mixin text-tiny{
-	font-size: var(--font-size-tiny);
-	font-family: var(--font-std);
-	letter-spacing: .02em;
-	font-weight: 400;
-	@include light-mode-wrapper{
-		font-weight: 500;
-	}
-	strong, b{
-		font-weight: 500;
-		@include light-mode-wrapper{
-			font-weight: 600;
-		}
+	@extend .merriweather-std;
+	color: var(--color-foreground);
+	font-size: var(--font-size-std);
+	line-height: 1.4;
+}
+
+
+main{
+	min-height: 80vh;
+}
+
+/* Layout ----------------------------------------------- */
+
+.container{
+	position: relative;
+	width: 100%;
+	max-width: var(--site-width-margins);
+	margin: 0 auto;
+	padding-left: var(--gutter-padding);
+	padding-right: var(--gutter-padding);
+	&--vertical-fill{
+		height:100%;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
 	}
 }
 
-@mixin text-miniscule{
-	font-family: var(--font-std);
-	font-size: var(--font-size-miniscule);
-	font-style: normal;
-	line-height: 1.4;
-	font-weight: 400;
-	@include light-mode-wrapper{
-		font-weight: 500;
-	}
-	strong, b{
-		font-weight: 500;
-		@include light-mode-wrapper{
-			font-weight: 600;
-		}
-	}
-} 
+.content-container{
+	width: 100%;
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding-left: var(--gutter-padding);
+	padding-right: var(--gutter-padding);
+}
+
+/* Typography ----------------------------------------------- */
+
+.section-head{
+	text-decoration: underline;
+	text-decoration-color: var(--color-accent);
+	text-decoration-thickness: 3px;
+	text-align: center;
+}

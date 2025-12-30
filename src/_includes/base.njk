@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
-	<link rel="stylesheet" href="/assets/styles/variables.css" />
-	<link rel="stylesheet" href="/assets/styles/main.css" />
-</head>
-<body>
-  {% include "header.njk" %}
-  <main class="main-section content-container">
-    {{ content | safe }}
-	{% include "donate.njk" %}
-  </main>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title }}</title>
+		<link rel="stylesheet" href="/assets/styles/variables.css" />
+		<link rel="stylesheet" href="/assets/styles/main.css" />
+	</head>
+	<body>
+		{% include "header.njk" %}
+		<main>
+		{% include "hero.njk" %}
+		<div class="main-body">
+			<div class="body-content">
+				<div class="content-container">
+					{{ content | safe }}
+				</div>
+			</div>
+		</div>
+		</main>
+		{% include "donate.njk" %}
+		{% include "footer.njk" %}
+	</body>
 </html>

@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6{
 		@include text-heading;
 	}
 }
-h4, h5, h6{
+h3, h4, h5, h6{
 	&:not([class]){
 		font-size: var(--font-size-heading-small);
 	}
@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 		margin-bottom: 0!important;
 	}
 }
+
 p, li{
 	&:not([class]){
 		max-width: var(--content-width);

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 :root{
 	/* Colors */
 	--color-bitcoin: #f7931a;
@@ -39,11 +37,9 @@
 	--site-width-margins: calc((var(--site-width) + var(--gutter-padding)) + var(--gutter-padding));
 
 	/* Typography */
-	--font-size-display: clamp(6.6rem, 11vw, 11rem);
-	--font-size-display-medium: clamp(4.8rem, 8vw, 8rem);
-	--font-size-display-small: clamp(2.6rem, 4vw, 4rem);
+	--font-size-display: clamp(2rem, 3.2vw, 3.5rem);
 
-	--font-size-heading: clamp(2.66rem, 2.8vw, 2.8rem);
+	--font-size-heading: clamp(2rem, 3vw, 2.6rem);
 	--font-size-heading-large: clamp(3.23rem, 3.4vw, 3.4rem);
 	--font-size-heading-small: clamp(2.09rem, 2.2vw, 2.2rem);
 
@@ -54,11 +50,6 @@
 	--font-size-blocky: clamp(1.472rem, 1.6vw, 1.6rem);
 	--font-size-tiny: 1.3rem;
 	--font-size-miniscule: 1.25rem;
-
-	--font-body: "Inter", sans-serif;
-	--font-std: "Inter", sans-serif;
-	--font-display: "Inter", sans-serif;
-	--font-blocky: "Inter", sans-serif;
 }
 
 body.dark-mode{

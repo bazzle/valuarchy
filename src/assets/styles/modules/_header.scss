@@ -1,17 +1,36 @@
+@use "../all-vars" as *;
+
 .header{
-	color: var(--color-foreground-inv);
-	background-color: var(--color-bg-inv);
-	padding-top: var(--block-spacing--shallow);
-	padding-bottom: var(--block-spacing--shallow);
-	a{
-		color: var(--color-foreground-inv);
+	color: var(--color-foreground);
+	background-color: var(--color-bg);
+	position: relative;
+	&::after{
+		content: '';
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-bottom: 1px dashed var(--color-foreground);
+	}
+	&__inner{
+		@extend .content-container;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		min-height: 8rem;
+		height: auto;
 	}
 	&__logo-wrapper{
-		display: inline-block;
-		img{
-			width: 100%;
-			max-width: 200px;
-			height: auto;
-		}
+		@extend .piazzolla-bold;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		border: 2px solid var(--color-foreground);
+		padding: .8em 1.2em;
+		flex-grow: 0;
+		width: auto;
+		background: var(--color-bg);
+		z-index: 1;
+		margin: 0;
 	}
 }
