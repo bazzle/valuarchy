@@ -24,5 +24,3 @@ Valuarchy is free to download. This introductory works is approximately a one ho
 The book is licenced under Creative Commons and you may copy or redistribute the material in any medium or format, and you may remix, transform, and build upon the material, however you may not use the material for commercial purposes.
 
 [The full licence details can be found here](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
-
-{% include "donate.njk" %}

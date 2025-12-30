@@ -1,7 +1,10 @@
 <footer class="footer">
 	<div class="content-container">
 		<p class="footer__line">
-			&copy; Valuarchy
+			&copy; Valuarchy <span id="year"></span>
+			<script>
+				document.getElementById('year').textContent = new Date().getFullYear();
+			</script>
 		</p>
 	</div>
 </footer>

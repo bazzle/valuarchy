@@ -63,7 +63,7 @@ main {
   flex-direction: column;
 }
 
-.content-container, .donate__inner, .download__inner, .hero__inner, .header__inner {
+.content-container, .footer__inner, .donate__inner, .download__inner, .hero__inner, .header__inner {
   width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
@@ -371,9 +371,8 @@ pre code {
 .hero {
   background: linear-gradient(to bottom, #000, #2B2B2B);
   position: relative;
-  padding-top: var(--block-spacing--shallow);
-  padding-bottom: var(--block-spacing--shallow);
-  margin-bottom: var(--block-spacing);
+  padding-top: var(--block-spacing);
+  padding-bottom: var(--block-spacing);
 }
 .hero::after {
   content: "";
@@ -388,6 +387,7 @@ pre code {
   font-style: normal;
   line-height: 1.2;
   font-weight: 760;
+  margin-bottom: 0;
   color: var(--color-foreground-inv);
 }
 .hero p span {
@@ -395,12 +395,9 @@ pre code {
 }
 
 .download {
-  background: linear-gradient(to bottom, #F8F8F8, #ffffff);
   position: relative;
   padding-top: var(--block-spacing--shallow);
-  padding-bottom: var(--block-spacing--shallow);
-  margin-top: var(--block-spacing);
-  margin-bottom: var(--block-spacing);
+  padding-bottom: var(--block-spacing);
 }
 .download::before {
   content: "";
@@ -432,6 +429,14 @@ pre code {
   padding-bottom: var(--block-spacing);
 }
 
+.main-body {
+  background: linear-gradient(to bottom, #F8F8F8, #ffffff);
+}
+
+.body-content {
+  padding-top: var(--block-spacing);
+  padding-bottom: var(--block-spacing);
+}
 .body-content h3, .body-content h4, .body-content h5, .body-content h6 {
   text-align: left;
 }
@@ -444,12 +449,10 @@ pre code {
 }
 
 .donate {
-  background: linear-gradient(to bottom, #F8F8F8, #ffffff);
   position: relative;
   padding-top: var(--block-spacing--shallow);
   padding-bottom: var(--block-spacing--shallow);
   margin-top: var(--block-spacing);
-  margin-bottom: var(--block-spacing);
 }
 .donate::before {
   content: "";
@@ -459,16 +462,20 @@ pre code {
   position: absolute;
   top: -1rem;
 }
-.donate::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px dashed var(--color-foreground);
-  position: absolute;
-  bottom: -1rem;
-}
 .donate__widget {
   margin-top: var(--block-spacing);
+}
+
+.footer {
+  position: relative;
+  padding-top: var(--block-spacing);
+  margin-top: var(--block-spacing);
+  padding-bottom: var(--block-spacing);
+  background: linear-gradient(to bottom, #000, #2B2B2B);
+}
+.footer__line {
+  color: var(--color-foreground-inv);
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

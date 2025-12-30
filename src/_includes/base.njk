@@ -11,12 +11,15 @@
 		{% include "header.njk" %}
 		<main>
 		{% include "hero.njk" %}
-		<div class="content-container">
+		<div class="main-body">
 			<div class="body-content">
-				{{ content | safe }}
+				<div class="content-container">
+					{{ content | safe }}
+				</div>
 			</div>
 		</div>
 		</main>
+		{% include "donate.njk" %}
 		{% include "footer.njk" %}
 	</body>
 </html>

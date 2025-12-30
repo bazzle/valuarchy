@@ -23,9 +23,10 @@
 		</p>
 	</div>
 </div>
-		<div class="content-container">
+		<div class="main-body">
 			<div class="body-content">
-				<h2>What if we could fix these problems with a simple idea?</h2>
+				<div class="content-container">
+					<h2>What if we could fix these problems with a simple idea?</h2>
 <p>Systems work as designed, not as intended. Democracy’s design has a significant flaw – the people who can promise anything to gain popularity, can also extract any cost to pay for those promises. This Funding Flaw is a conflict of interests that results in a socialist advantage and produces leadership with undesirable qualities.</p>
 <p>The Funding Flaw has resulted in the ever expanding spending and size of government, regardless of ideology or era in which it is tried. Democracy does not enable people to make informed decisions, so promises are judged only on emotional appeals.</p>
 <p>Other ideologies have attempted to compete socialists virtue signalling through reason, however this has been ineffective, and it is the wrong approach. What is needed is a new system that corrects these flaws.</p>
@@ -43,32 +44,39 @@
 </div></p>
 <p></div></p>
 </div>
-<div class="content-container">
-	<div class="body-content">
+<div class="body-content">
+	<div class="content-container">
 <p>Valuarchy is free to download. This introductory works is approximately a one hour read covering concepts and theory and is very approachable. If you wish to support this project, donations are welcome in bitcoin lightning donation address in the top right, or e-books are available to purchase from Amazon or Apple. If you wish to contact me, you can find me on x.com or on NOSTR at the social media links, or email me at Valuarchy@proton.me.</p>
 <p>The book is licenced under Creative Commons and you may copy or redistribute the material in any medium or format, and you may remix, transform, and build upon the material, however you may not use the material for commercial purposes.</p>
 <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">The full licence details can be found here</a></p>
-<p></div></p>
-</div>
-<div class="donate">
-	<div class="donate__inner">
-<p><h2>Donate to help the cause</h2></p>
-<p><div class="donate__widget">
-<div id="blink-pay-button-container"></div>
-</div></p>
-<p><script src="https://blinkbitcoin.github.io/donation-button.blink.sv/js/blink-pay-button.js"></script></p>
-<p><script src="/assets/scripts/blink-init.js" defer></script></p>
-<p></div></p>
-</div>
-<div class="content-container">
-	<div class="body-content">
+
+				</div>
 			</div>
 		</div>
 		</main>
+		<div class="donate">
+	<div class="donate__inner">
+
+		<h2>Donate to help the cause</h2>
+
+		<div class="donate__widget">
+			<div id="blink-pay-button-container"></div>
+		</div>
+
+		<script src="https://blinkbitcoin.github.io/donation-button.blink.sv/js/blink-pay-button.js"></script>
+
+		<script src="/assets/scripts/blink-init.js" defer></script>
+
+	</div>
+</div>
+
 		<footer class="footer">
 	<div class="content-container">
 		<p class="footer__line">
-			&copy; Valuarchy
+			&copy; Valuarchy <span id="year"></span>
+			<script>
+				document.getElementById('year').textContent = new Date().getFullYear();
+			</script>
 		</p>
 	</div>
 </footer>

@@ -1,12 +1,9 @@
 @use "../all-vars" as *;
 
 .download{
-	background: linear-gradient(to bottom, #F8F8F8, #ffffff);
 	position: relative;
 	padding-top: var(--block-spacing--shallow);
-	padding-bottom: var(--block-spacing--shallow);
-	margin-top: var(--block-spacing);
-	margin-bottom: var(--block-spacing);
+	padding-bottom: var(--block-spacing);
 	h2{
 		@extend .section-head;
 	}

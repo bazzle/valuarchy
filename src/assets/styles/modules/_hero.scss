@@ -3,9 +3,8 @@
 .hero{
 	background: linear-gradient(to bottom, #000, #2B2B2B);
 	position: relative;
-	padding-top: var(--block-spacing--shallow);
-	padding-bottom: var(--block-spacing--shallow);
-	margin-bottom: var(--block-spacing);
+	padding-top: var(--block-spacing);
+	padding-bottom: var(--block-spacing);
 	&::after{
 		content: '';
 		width: 100%;
@@ -19,6 +18,7 @@
 	}
 	p{
 		@include text-display;
+		margin-bottom: 0;
 		color: var(--color-foreground-inv);
 		span{
 			color: var(--color-accent);
