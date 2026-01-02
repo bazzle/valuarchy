@@ -469,8 +469,65 @@ pre code {
   position: absolute;
   top: -1rem;
 }
-.contacts__widget {
+.contacts__list {
   margin-top: var(--block-spacing);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  row-gap: 0.6em;
+  column-gap: 1.2em;
+}
+.contacts__list li {
+  list-style: none;
+  width: auto;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+.contacts__link .icon {
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  color: var(--color-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts__link .icon--email::before {
+  position: relative;
+  background-color: currentColor;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  mask: url("../img/icons/email.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/icons/email.svg") no-repeat center/contain;
+}
+.contacts__link .icon--x::before {
+  position: relative;
+  background-color: currentColor;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  mask: url("../img/icons/x.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/icons/x.svg") no-repeat center/contain;
+}
+.contacts__link .icon--nostr::before {
+  position: relative;
+  background-color: currentColor;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  mask: url("../img/icons/nostr.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/icons/nostr.svg") no-repeat center/contain;
 }
 
 .footer {
