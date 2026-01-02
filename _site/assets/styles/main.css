@@ -63,7 +63,7 @@ main {
   flex-direction: column;
 }
 
-.content-container, .footer__inner, .share__inner, .donate__inner, .download__inner, .hero__inner, .header__inner {
+.content-container, .footer__inner, .hero__inner, .header__inner, .section__inner {
   width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
@@ -456,12 +456,12 @@ pre code {
   margin-top: var(--block-spacing);
 }
 
-.share {
+.contacts {
   position: relative;
   padding-top: var(--block-spacing--shallow);
   padding-bottom: var(--block-spacing);
 }
-.share::before {
+.contacts::before {
   content: "";
   width: 100%;
   height: 1px;
@@ -469,7 +469,7 @@ pre code {
   position: absolute;
   top: -1rem;
 }
-.share__widget {
+.contacts__widget {
   margin-top: var(--block-spacing);
 }
 

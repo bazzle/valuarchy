@@ -4,4 +4,7 @@
 	h2{
 		@extend .section-head;
 	}
+	&__inner{
+		@extend .content-container;
+	}
 }

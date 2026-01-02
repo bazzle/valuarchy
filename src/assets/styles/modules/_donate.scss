@@ -12,9 +12,6 @@
 		position: absolute;
 		top: -1rem;
 	}
-	&__inner{
-		@extend .content-container;
-	}
 	&__widget{
 		margin-top: var(--block-spacing);
 	}

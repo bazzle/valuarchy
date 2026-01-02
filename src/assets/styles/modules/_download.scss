@@ -11,9 +11,6 @@
 		position: absolute;
 		top: -1rem;
 	}
-	&__inner{
-		@extend .content-container;
-	}
 	&__button-group{
 		display: flex;
 		flex-wrap: wrap;
