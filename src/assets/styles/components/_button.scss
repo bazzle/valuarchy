@@ -4,7 +4,12 @@
 	@include text-blocky;
 	background: var(--color-bg-inv);
 	color: var(--color-foreground-inv);
+	text-decoration: none;
 	padding: 0.8em 1.2em;
 	display: inline-block;
-	text-decoration: none;
+	position: relative;
+	transition: transform 0.2s ease;
+	&:hover{
+		transform: (translateY(-1px));
+	}
 }
