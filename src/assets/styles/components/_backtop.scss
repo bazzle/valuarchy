@@ -8,12 +8,19 @@
 	right: 4rem;
 	height: 4rem;
 	margin-bottom: 0;
-	background-color: var(--color-accent);
+	background-color: var(--color-bg-inv);
+	color: var(--color-foreground-inv);
 	border-bottom: 0;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	border-style: solid;
 	border-width: 0;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	&.visible {
+		opacity: 1;
+	}
 	&:hover, &:focus{
 		border-width: .5px;
 		border-color: var(--color-foreground);
@@ -21,11 +28,8 @@
 	svg{
 		height: 4rem;
 		width: 4rem;
+		path{
+			fill: var(--color-foreground-inv);
+		}
 	}
-	opacity: 0;
-	transition: opacity 0.2s ease;
-	&.visible {
-		opacity: 1;
-	}
-
 }

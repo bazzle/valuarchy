@@ -1,4 +1,5 @@
-export function backTop(){
+export function BackTop(){
+	console.log('woogooo');
 	const handleClick = () => {
 		window.scrollTo({
 			top: 0,
@@ -11,7 +12,7 @@ export function backTop(){
 }
 
 
-export function backTopVisibility(){
+export function BackTopVisibility(){
 	const backTopButton = document.getElementById('backTop');
 	function checkScroll() {
 		const triggerPoint = window.innerHeight;
