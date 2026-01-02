@@ -71,7 +71,14 @@
 
 @mixin text-link-defaults{
 	@extend .merriweather-std;
-	color: var(--color-bitcoin-a11y-text);
+	color: var(--color-foreground);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	text-decoration-thickness: 1px;
+	text-decoration-color: var(--color-accent);
+	&:hover, &:focus-visible{
+		text-decoration: none;
+	}
 }
 
 @mixin text-link{

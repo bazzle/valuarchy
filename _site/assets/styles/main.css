@@ -198,7 +198,14 @@ button {
   cursor: pointer;
 }
 button.button {
-  color: var(--color-bitcoin-a11y-text);
+  color: var(--color-foreground);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--color-accent);
+}
+button.button:hover, button.button:focus-visible {
+  text-decoration: none;
 }
 
 input, button, label, textarea {
@@ -206,7 +213,14 @@ input, button, label, textarea {
 }
 
 a {
-  color: var(--color-bitcoin-a11y-text);
+  color: var(--color-foreground);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--color-accent);
+}
+a:hover, a:focus-visible {
+  text-decoration: none;
 }
 
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
