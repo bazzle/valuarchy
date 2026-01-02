@@ -7,10 +7,12 @@
 	--color-black-solid: #000000;
 	--color-black-off-solid: #151515;
 	--color-white-off-solid: #fafafa;
+	--color-beige: #fffdee;
 
 	--color-foreground: var(--color-black-off-solid);
 	--color-foreground-inv: var(--color-white-solid);
 	--color-bg: var(--color-white-solid);
+	--color-bg-alt: var(--color-beige);
 	--color-bg-inv: var(--color-black-solid);
 	--color-bg-off-solid: var(--color-white-off-solid);
 	--color-accent: var(--color-bitcoin);
