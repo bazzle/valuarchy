@@ -63,7 +63,7 @@ main {
   flex-direction: column;
 }
 
-.content-container, .footer__inner, .donate__inner, .download__inner, .hero__inner, .header__inner {
+.content-container, .footer__inner, .share__inner, .donate__inner, .download__inner, .hero__inner, .header__inner {
   width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
@@ -72,7 +72,7 @@ main {
 }
 
 /* Typography ----------------------------------------------- */
-.section-head, .donate h2, .body-content h2, .download h2 {
+.section-head, .body-content h2, .section h2 {
   text-decoration: underline;
   text-decoration-color: var(--color-accent);
   text-decoration-thickness: 3px;
@@ -453,6 +453,23 @@ pre code {
   top: -1rem;
 }
 .donate__widget {
+  margin-top: var(--block-spacing);
+}
+
+.share {
+  position: relative;
+  padding-top: var(--block-spacing--shallow);
+  padding-bottom: var(--block-spacing);
+}
+.share::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed var(--color-foreground);
+  position: absolute;
+  top: -1rem;
+}
+.share__widget {
   margin-top: var(--block-spacing);
 }
 

@@ -6,6 +6,7 @@
 @use "globals/base";
 @use "globals/typography";
 @use "globals/layout";
+@use "globals/section";
 @use "globals/helpers";
 
 // Components
@@ -19,4 +20,5 @@
 @use "modules/main-section";
 @use "modules/body-content";
 @use "modules/donate";
+@use "modules/share";
 @use "modules/footer";

@@ -1,0 +1,7 @@
+@use "../all-vars" as *;
+
+.section{
+	h2{
+		@extend .section-head;
+	}
+}
