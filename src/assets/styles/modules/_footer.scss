@@ -2,9 +2,17 @@
 
 .footer{
 	position: relative;
-	padding-top: var(--block-spacing);
 	margin-top: var(--block-spacing);
+	padding-top: var(--block-spacing);
 	padding-bottom: var(--block-spacing);
+	&::before{
+		content: '';
+		width: 100%;
+		height: 1px;
+		border-bottom: 1px dashed var(--color-foreground);
+		position: absolute;
+		top: -1rem;
+	}
 	background: linear-gradient(to bottom, #000, #2B2B2B);
 	&__inner{
 		@extend .content-container;

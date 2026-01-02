@@ -17,15 +17,7 @@
   font-variation-settings: "wdth" 100;
 }
 .merriweather-std strong, .small-print p strong, p:not([class]) strong, li:not([class]) strong, body strong, button.button strong, a strong, .merriweather-std b, .small-print p b, p:not([class]) b, li:not([class]) b, body b, button.button b, a b {
-  font-weight: 650;
-}
-body.light-mode .merriweather-std strong, body.light-mode .small-print p strong, .small-print body.light-mode p strong, body.light-mode p:not([class]) strong, body.light-mode li:not([class]) strong, body.light-mode body strong, body.light-mode button.button strong, body.light-mode a strong, body.light-mode .merriweather-std b, body.light-mode .small-print p b, .small-print body.light-mode p b, body.light-mode p:not([class]) b, body.light-mode li:not([class]) b, body.light-mode body b, body.light-mode button.button b, body.light-mode a b {
-  font-weight: 660;
-}
-@media print {
-  .merriweather-std strong, .small-print p strong, p:not([class]) strong, li:not([class]) strong, body strong, button.button strong, a strong, .merriweather-std b, .small-print p b, p:not([class]) b, li:not([class]) b, body b, button.button b, a b {
-    font-weight: 660;
-  }
+  font-weight: 600;
 }
 
 .piazzolla-std, h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
@@ -198,6 +190,7 @@ button {
   cursor: pointer;
 }
 button.button {
+  font-weight: 600;
   color: var(--color-foreground);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -213,6 +206,7 @@ input, button, label, textarea {
 }
 
 a {
+  font-weight: 600;
   color: var(--color-foreground);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -475,14 +469,6 @@ pre code {
   padding-top: var(--block-spacing--shallow);
   padding-bottom: var(--block-spacing);
 }
-.contacts::before {
-  content: "";
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px dashed var(--color-foreground);
-  position: absolute;
-  top: -1rem;
-}
 .contacts__list {
   margin-top: var(--block-spacing);
   display: flex;
@@ -546,9 +532,19 @@ pre code {
 
 .footer {
   position: relative;
-  padding-top: var(--block-spacing);
   margin-top: var(--block-spacing);
+  padding-top: var(--block-spacing);
   padding-bottom: var(--block-spacing);
+}
+.footer::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed var(--color-foreground);
+  position: absolute;
+  top: -1rem;
+}
+.footer {
   background: linear-gradient(to bottom, #000, #2B2B2B);
 }
 .footer__line {
