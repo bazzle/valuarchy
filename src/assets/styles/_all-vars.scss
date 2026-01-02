@@ -17,7 +17,7 @@
 .merriweather-bold{
 	font-family: "Merriweather", serif;
 	font-optical-sizing: auto;
-	font-weight: 600;
+	font-weight: 680;
 	font-style: normal;
 	font-variation-settings:
 		"wdth" 100;
@@ -30,7 +30,7 @@
 	font-variation-settings:
 		"wdth" 100;
 	strong, b{
-		font-weight: 600;
+		font-weight: 680;
 	}
 }
 
@@ -68,7 +68,7 @@
 
 @mixin text-link-defaults{
 	@extend .merriweather-std;
-	font-weight: 600;
+	font-weight: 680;
 	color: var(--color-foreground);
 	text-decoration: underline;
 	text-underline-offset: 2px;

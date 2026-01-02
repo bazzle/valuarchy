@@ -4,7 +4,7 @@
 .merriweather-bold, .hero p, .button {
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 680;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
@@ -17,7 +17,7 @@
   font-variation-settings: "wdth" 100;
 }
 .merriweather-std strong, .small-print p strong, p:not([class]) strong, li:not([class]) strong, body strong, button.button strong, a strong, .merriweather-std b, .small-print p b, p:not([class]) b, li:not([class]) b, body b, button.button b, a b {
-  font-weight: 600;
+  font-weight: 680;
 }
 
 .piazzolla-std, h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
@@ -190,7 +190,7 @@ button {
   cursor: pointer;
 }
 button.button {
-  font-weight: 600;
+  font-weight: 680;
   color: var(--color-foreground);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -206,7 +206,7 @@ input, button, label, textarea {
 }
 
 a {
-  font-weight: 600;
+  font-weight: 680;
   color: var(--color-foreground);
   text-decoration: underline;
   text-underline-offset: 2px;
