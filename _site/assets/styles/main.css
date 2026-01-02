@@ -9,14 +9,14 @@
   font-variation-settings: "wdth" 100;
 }
 
-.merriweather-std, .small-print p, p:not([class]), li:not([class]), body, button.button, a {
+.merriweather-std, .footer__credit-line, .small-print p, p:not([class]), li:not([class]), body, button.button, a {
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-.merriweather-std strong, .small-print p strong, p:not([class]) strong, li:not([class]) strong, body strong, button.button strong, a strong, .merriweather-std b, .small-print p b, p:not([class]) b, li:not([class]) b, body b, button.button b, a b {
+.merriweather-std strong, .footer__credit-line strong, .small-print p strong, p:not([class]) strong, li:not([class]) strong, body strong, button.button strong, a strong, .merriweather-std b, .footer__credit-line b, .small-print p b, p:not([class]) b, li:not([class]) b, body b, button.button b, a b {
   font-weight: 680;
 }
 
@@ -447,8 +447,7 @@ pre code {
 }
 
 .small-print p {
-  color: var(--color-foreground);
-  font-size: var(--font-size-std);
+  font-size: var(--font-size-tiny);
   line-height: 1.4;
   margin-bottom: 1em;
 }
@@ -542,6 +541,12 @@ pre code {
   padding-top: var(--block-spacing);
   padding-bottom: var(--block-spacing);
 }
+.footer > * {
+  color: var(--color-foreground-inv);
+}
+.footer a {
+  color: var(--color-foreground-inv);
+}
 .footer::before {
   content: "";
   width: 100%;
@@ -553,9 +558,20 @@ pre code {
 .footer {
   background: linear-gradient(to bottom, #000, #2B2B2B);
 }
-.footer__line {
-  color: var(--color-foreground-inv);
+.footer__main-line {
   text-align: center;
+}
+.footer__credit-line {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  font-size: var(--font-size-tiny);
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+.footer__credit-line a {
+  font-family: sans-serif;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=main.css.map */

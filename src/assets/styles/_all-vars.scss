@@ -122,8 +122,7 @@
 
 @mixin text-tiny{
 	@extend .merriweather-std;
-	color: var(--color-foreground);
-	font-size: var(--font-size-std);
+	font-size: var(--font-size-tiny);
 	line-height: 1.4;
 }
 

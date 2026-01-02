@@ -5,6 +5,12 @@
 	margin-top: var(--block-spacing);
 	padding-top: var(--block-spacing);
 	padding-bottom: var(--block-spacing);
+	&>*{
+		color: var(--color-foreground-inv);
+	}
+	a{
+		color: var(--color-foreground-inv);
+	}
 	&::before{
 		content: '';
 		width: 100%;
@@ -17,8 +23,18 @@
 	&__inner{
 		@extend .content-container;
 	}
-	&__line{
-		color: var(--color-foreground-inv);
+	&__main-line{
 		text-align: center;
+	}
+	&__credit-line{
+		position: absolute;
+		left: 1em;
+		bottom: 1em;
+		@include text-tiny;
+		font-family: sans-serif;
+		a{
+			font-family: sans-serif;
+			font-weight: normal;
+		}
 	}
 }
