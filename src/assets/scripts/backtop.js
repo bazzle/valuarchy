@@ -1,5 +1,4 @@
 export function BackTop(){
-	console.log('woogooo');
 	const handleClick = () => {
 		window.scrollTo({
 			top: 0,
