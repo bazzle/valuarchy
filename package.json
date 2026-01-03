@@ -4,7 +4,7 @@
 	"description": "Valuarchy Website",
 	"main": "index.js",
 	"repository": "https://github.com/bazzle/valuarchy",
-	"author": "Barry Richards Brendan Guest",
+	"author": "Brendan Guest, Design and built by BR Web",
 	"scripts": {
 		"build:scss": "sass src/assets/styles/main.scss _site/assets/styles/main.css",
 		"build:11ty": "eleventy",
