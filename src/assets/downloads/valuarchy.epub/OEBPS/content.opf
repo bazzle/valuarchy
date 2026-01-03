@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf"
+         version="3.0"
+         unique-identifier="BookId"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xml:lang="en"
+         xmlns:media="http://www.idpf.org/epub/vocab/overlays/#"
+         prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:opf="http://www.idpf.org/2007/opf">
+
+    <dc:identifier id="BookId">489dccf4-9f35-48b0-b78e-57933c3722ce</dc:identifier>
+    <meta refines="#BookId" property="identifier-type" scheme="onix:codelist5">22</meta>
+    <meta property="dcterms:identifier" id="meta-identifier">BookId</meta>
+    <dc:title>Valuarchy</dc:title>
+    <meta property="dcterms:title" id="meta-title">Valuarchy</meta>
+    <dc:language>en</dc:language>
+    <meta property="dcterms:language" id="meta-language">en</meta>
+    <meta property="dcterms:modified">2025-12-07T23:05:25Z</meta>
+    <dc:creator id="creator">Brendan Guest</dc:creator>
+    <meta refines="#creator" property="file-as">Brendan Guest</meta>
+    <meta refines="#creator" property="role">aut</meta>
+    <meta property="dcterms:publisher">Independent</meta>
+    <dc:publisher>Independent</dc:publisher>
+    <meta property="dcterms:date">2025-12-07</meta>
+    <dc:date>2025-12-07</dc:date>
+    <meta property="dcterms:rights">All rights reserved</meta>
+    <dc:rights>Copyright &#x00A9; 2025 by Brendan Guest</dc:rights>
+    <meta name="cover" content="image_cover"/>
+    <meta name="generator" content="Reedsy Editor" />
+    <meta property="ibooks:specified-fonts">true</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessibilitySummary">
+      This EPUB publication is accessible. It includes structured navigation, reflowable text, and is compatible with assistive technologies.
+    </meta>
+  </metadata>
+
+  <manifest>
+
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="css" href="style.css" media-type="text/css" />
+
+    
+
+    
+
+    
+    <item id="content_0_title-page" href="0_title-page.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_1_reedsy" href="1_reedsy.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_2_introduction" href="2_introduction.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_3_sovereign-property-a" href="3_sovereign-property-a.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_4_money-as-a-language" href="4_money-as-a-language.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_5_the-funding-flaw" href="5_the-funding-flaw.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_6_the-core-principle-o" href="6_the-core-principle-o.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_7_introducing-valuarch" href="7_introducing-valuarch.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_8_contemplations" href="8_contemplations.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="content_9_conclusion" href="9_conclusion.xhtml" media-type="application/xhtml+xml"  />
+    
+
+    
+    <item id="font_0" href="fonts/Lato-Light.ttf" media-type="font/ttf" />
+    
+    <item id="font_1" href="fonts/Crimson-Bold.otf" media-type="font/ttf" />
+    
+    <item id="font_2" href="fonts/Crimson-BoldItalic.otf" media-type="font/ttf" />
+    
+    <item id="font_3" href="fonts/Crimson-Italic.otf" media-type="font/ttf" />
+    
+    <item id="font_4" href="fonts/Crimson-Roman.otf" media-type="font/ttf" />
+    
+    <item id="font_5" href="fonts/RobotoMono-Regular.ttf" media-type="font/ttf" />
+    
+    <item id="font_6" href="fonts/RobotoMono-Bold.ttf" media-type="font/ttf" />
+    
+    <item id="font_7" href="fonts/RobotoMono-BoldItalic.ttf" media-type="font/ttf" />
+    
+    <item id="font_8" href="fonts/RobotoMono-Italic.ttf" media-type="font/ttf" />
+    
+
+  </manifest>
+  <spine toc="ncx">
+    
+
+      
+
+      <itemref idref="content_0_title-page"/>
+    
+
+      
+
+      <itemref idref="content_1_reedsy"/>
+    
+
+      
+      <itemref idref="toc" />
+      
+
+      <itemref idref="content_2_introduction"/>
+    
+
+      
+
+      <itemref idref="content_3_sovereign-property-a"/>
+    
+
+      
+
+      <itemref idref="content_4_money-as-a-language"/>
+    
+
+      
+
+      <itemref idref="content_5_the-funding-flaw"/>
+    
+
+      
+
+      <itemref idref="content_6_the-core-principle-o"/>
+    
+
+      
+
+      <itemref idref="content_7_introducing-valuarch"/>
+    
+
+      
+
+      <itemref idref="content_8_contemplations"/>
+    
+
+      
+
+      <itemref idref="content_9_conclusion"/>
+    
+  </spine>
+</package>
