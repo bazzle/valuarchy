@@ -19,7 +19,7 @@ Valuarchy does this by leveraging the power of money as both a communication med
 
 **Valuarchy:** The system of evaluating a potential leader’s worth, realized through the citizen’s sum exchange of money under contract paid directly to the government.
 
-**We need to give the people the information they need to make their own personally informed decision** and provides a fair playing field for all ideas to compete without advantage to a single ideology.
+**We need to give the people the information they need to make their own personally informed decision** and provide a fair playing field for all ideas to compete without advantage to a single ideology.
 
 {% include "download.njk" %}
 
