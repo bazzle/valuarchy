@@ -417,6 +417,10 @@ pre code {
   position: relative;
   padding-top: var(--block-spacing);
   padding-bottom: var(--block-spacing);
+  background-image: url(../img/chains-breaking.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .hero::after {
   content: "";
@@ -433,8 +437,16 @@ pre code {
   font-weight: 760;
   margin-bottom: 0;
   color: var(--color-foreground-inv);
+  line-height: 1.4;
 }
-.hero p span {
+.hero p .text {
+  background: rgba(0, 0, 0, 0.8);
+  padding: var(--gutter-padding);
+  display: inline-block;
+  position: relative;
+  left: calc(-1 * var(--gutter-padding));
+}
+.hero .hero__highlight {
   color: var(--color-accent);
 }
 
