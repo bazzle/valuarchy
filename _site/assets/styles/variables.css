@@ -25,10 +25,8 @@
 	/* Layout */
 	--site-width: 1100px;
 	--content-width: 900px;
-	--extended-width: 1600px;
-
 	--border-radius: 2px;
-	--gutter-padding: 2em;
+	--gutter-padding: 1.6rem;
 	--block-spacing--shallow--static: 2rem;
 	--block-spacing--tiny: clamp(1rem, 3vw, 3rem);
 	--block-spacing--shallow: clamp(2rem, 4vw, 4.5rem);

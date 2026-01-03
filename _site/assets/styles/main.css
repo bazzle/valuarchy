@@ -27,7 +27,7 @@
   font-style: normal;
 }
 
-.piazzolla-bold, .header__logo-wrapper {
+.piazzolla-bold {
   font-family: "Piazzolla", serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -39,6 +39,7 @@ main {
   min-height: 80vh;
 }
 
+/* Breakpoints ------------------------------------------------- */
 /* Layout ----------------------------------------------- */
 .container {
   position: relative;
@@ -299,6 +300,19 @@ pre code {
   stroke: var(--color-foreground);
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 .backTop {
   position: fixed;
   bottom: -2px;
@@ -370,16 +384,32 @@ pre code {
   min-height: 8rem;
   height: auto;
 }
-.header__logo-wrapper {
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  border: 2px solid var(--color-foreground);
-  padding: 0.8em 1.2em;
-  flex-grow: 0;
-  width: auto;
+.header__logo {
+  max-width: 100%;
   background: var(--color-bg);
   z-index: 1;
-  margin: 0;
+  padding: 1em var(--gutter-padding);
+  position: relative;
+  left: calc(-1 * var(--gutter-padding));
+}
+.header__logo svg {
+  max-width: 100%;
+}
+.header__logo--wide {
+  display: none;
+}
+@media screen and (min-width: 359px) {
+  .header__logo--wide {
+    display: block;
+  }
+}
+.header__logo--narrow {
+  display: block;
+}
+@media screen and (min-width: 359px) {
+  .header__logo--narrow {
+    display: none;
+  }
 }
 
 .hero {

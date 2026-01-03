@@ -21,16 +21,27 @@
 		min-height: 8rem;
 		height: auto;
 	}
-	&__logo-wrapper{
-		@extend .piazzolla-bold;
-		text-transform: uppercase;
-		font-size: 1.8rem;
-		border: 2px solid var(--color-foreground);
-		padding: .8em 1.2em;
-		flex-grow: 0;
-		width: auto;
+	&__logo{
+		max-width: 100%;
 		background: var(--color-bg);
 		z-index: 1;
-		margin: 0;
+		padding: 1em var(--gutter-padding);
+		position: relative;
+		left: calc(-1 * var(--gutter-padding));
+		svg{
+			max-width: 100%;
+		}
+		&--wide{
+			display: none;
+			@include break(mobile){
+				display: block;
+			}
+		}
+		&--narrow{
+			display: block;
+			@include break(mobile){
+				display: none;
+			}
+		}
 	}
 }

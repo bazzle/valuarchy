@@ -1,3 +1,4 @@
+@use "sass:map";
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
 
 /* Useful helpers -------------------------------------- */
@@ -129,6 +130,58 @@
 
 main{
 	min-height: 80vh;
+}
+
+/* Breakpoints ------------------------------------------------- */
+
+$breakpoints: (
+    mobile: 359px,
+    mobile-land: 512px,
+    tablet: 641px,
+    desktop: 800px,
+    desktop-mini: 880px,
+    desktop-med: 1025px,
+    mobile-nav: 1090px,
+    desktop-wide: 1200px,
+    desktop-wider: 1340px,
+    desktop-xl: 1408px,
+	site-width-margins: var(--site-width--margins),
+	site-width: var(--site-width)
+);
+$breakpoints--h: (
+    letterbox: 900px
+);
+
+// breakpoint mixins
+@mixin break($breakpoint: medium) {
+	@if map.has-key($breakpoints, $breakpoint) {
+		@media screen and (min-width: map.get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+}
+
+@mixin break-under($breakpoint: medium) {
+	@if map.has-key($breakpoints, $breakpoint) {
+	  @media screen and (max-width: map.get($breakpoints, $breakpoint)) {
+		  @content;
+	  }
+	}
+}
+
+@mixin break-between($breakpoint-lower, $breakpoint-higher){
+	@media screen and (min-width: map.get($breakpoints, $breakpoint-lower)) and (max-width: map.get($breakpoints, $breakpoint-higher)) {
+		@content;
+	}
+}
+
+// height 
+@mixin break--h($breakpoint) {
+	@if map.has-key($breakpoints--h, $breakpoint) {
+		@media screen and (max-height: map.get($breakpoints--h, $breakpoint)) and (orientation: landscape) {
+			@content;
+		}
+	}
 }
 
 /* Layout ----------------------------------------------- */
