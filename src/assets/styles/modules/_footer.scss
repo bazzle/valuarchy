@@ -4,7 +4,10 @@
 	position: relative;
 	margin-top: var(--block-spacing);
 	padding-top: var(--block-spacing);
-	padding-bottom: var(--block-spacing);
+	padding-bottom: var(--block-spacing--deep);
+	@include break(tablet){
+		padding-bottom: var(--block-spacing);
+	}
 	&>*{
 		color: var(--color-foreground-inv);
 	}
