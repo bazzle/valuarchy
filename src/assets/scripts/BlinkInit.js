@@ -1,4 +1,4 @@
-function initBlinkWidget() {
+export function initBlinkWidget() {
 	if (typeof BlinkPayButton !== "undefined") {
 		BlinkPayButton.init({
 			username: "valuarchist",
@@ -24,11 +24,4 @@ function initBlinkWidget() {
 		// Try again in 100ms if BlinkPayButton isn't loaded yet
 		setTimeout(initBlinkWidget, 100);
 	}
-}
-
-// Initialize when DOM is ready or now if already loaded
-if (document.readyState === "loading") {
-	document.addEventListener("DOMContentLoaded", initBlinkWidget);
-} else {
-	initBlinkWidget();
 }
