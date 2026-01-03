@@ -5,11 +5,13 @@ title: Valuarchy – A Monetary Value Leadership System
 
 ## What if we could fix this political problem with one simple idea?
 
-**Systems work as designed, not as intended. Democracy’s design has a significant Funding Flaw – the people who can promise anything to gain popularity, can also extract any cost to pay for those promises, expanding spending and size of government.**
+**Systems work as designed, not as intended. Democracy’s design has a significant Funding flaw – the people who can promise anything to gain popularity, can also extract any cost to pay for those promises, regardless of the culture or era the democratic process takes place in.**
 
-This results in a system where people are unable to make informed decisions on who to elect, so promises are judged only on emotional appeals. This gives a major advantage to socialist policies – and why government’s keep growing and all parties seem to tout the same welfare state principles.
+This inevitably results in the expansion of spending and size of government. And fosters a system where people are unable to make informed decisions on who to elect, so promises are judged only on emotional appeals. This gives a major advantage to socialist policies, and explains why all parties seem to tout the same welfare state principles.
 
-Other ideologies have attempted to compete with socialist virtue signalling through reason, however this has been ineffective and it is the wrong approach. What is needed is a new system that corrects these flaws.
+Other ideologies have attempted to compete with socialist virtue signalling through reason, however this has been ineffective and it is the wrong approach. 
+
+What is needed is a new system that corrects this flaw.
 
 **Valuarchy is the novel system which solves the centuries long problems inherent with democracy.**
 
