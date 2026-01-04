@@ -1,4 +1,4 @@
-export function initBlinkWidget() {
+export function InitBlinkWidget() {
 	if (typeof BlinkPayButton !== "undefined") {
 		BlinkPayButton.init({
 			username: "valuarchist",
@@ -22,6 +22,6 @@ export function initBlinkWidget() {
 		});
 	} else {
 		// Try again in 100ms if BlinkPayButton isn't loaded yet
-		setTimeout(initBlinkWidget, 100);
+		setTimeout(InitBlinkWidget, 100);
 	}
 }
