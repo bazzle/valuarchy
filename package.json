@@ -6,10 +6,10 @@
 	"repository": "https://github.com/bazzle/valuarchy",
 	"author": "Brendan Guest, Design and built by BR Web",
 	"scripts": {
-		"build:scss": "sass src/assets/styles/main.scss _site/assets/styles/main.css",
+		"build:scss": "sass src/assets/styles/main.scss _site/assets/styles/main.css --style=compressed",
 		"build:11ty": "eleventy",
-		"build": "yarn build:scss && yarn build:11ty",
-		"build-prod": "yarn build:scss && yarn build:11ty-prod",
+		"esbuild": "esbuild src/assets/scripts/main.js --bundle --minify --format=esm --outfile=_site/assets/scripts/main.js",
+		"build": "yarn build:scss && yarn build:11ty && yarn esbuild",
 		"watch:scss": "sass --watch src/assets/styles/main.scss:_site/assets/styles/main.css",
 		"start": "concurrently \"yarn watch:scss\" \"eleventy --serve\""
 	},
