@@ -1,9 +1,8 @@
 import {BackTop, BackTopVisibility} from './BackTop.js';
 import {initBlinkWidget} from './BlinkInit.js';
+import {AddLoaded} from './AddLoaded.js';
 
-
-document.addEventListener("DOMContentLoaded", function(){
-	BackTop();
-	BackTopVisibility();
-	initBlinkWidget();
-});
+BackTop();
+BackTopVisibility();
+initBlinkWidget();
+AddLoaded();
