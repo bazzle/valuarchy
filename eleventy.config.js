@@ -6,7 +6,8 @@ export default function(eleventyConfig) {
 		"src/assets/img": "assets/img",
 		"src/assets/styles/variables.css": "assets/styles/variables.css",
 		"src/assets/downloads" : "assets/downloads",
-		"src/assets/img/favicon": "/"
+		"src/assets/img/favicon": "/",
+		"src/_redirects": "_redirects"
 	});
 	const pathPrefix = "/";
 	return {
