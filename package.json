@@ -11,7 +11,7 @@
 		"esbuild": "esbuild src/assets/scripts/main.js --bundle --minify --format=esm --outfile=_site/assets/scripts/main.js",
 		"build": "yarn build:scss && yarn build:11ty && yarn esbuild",
 		"watch:scss": "sass --watch src/assets/styles/main.scss:_site/assets/styles/main.css",
-		"start": "concurrently \"yarn watch:scss\" \"eleventy --serve\""
+		"dev": "concurrently \"yarn watch:scss\" \"eleventy --serve\""
 	},
 	"dependencies": {
 		"@11ty/eleventy": "^3.1.2",
