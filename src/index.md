@@ -2,6 +2,7 @@
 layout: base.njk
 title: Valuarchy – A Monetary Value Leadership System
 description: What if we could fix this political problem with one simple idea?
+canonical: https://valuarchy.com
 ---
 
 ## What if we could fix this political problem with one simple idea?

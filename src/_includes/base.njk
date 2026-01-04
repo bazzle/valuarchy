@@ -11,6 +11,9 @@
 		<link rel="stylesheet" href="/assets/styles/main.css" />
 		<script src="https://blinkbitcoin.github.io/donation-button.blink.sv/js/blink-pay-button.js" defer></script>
 		<script type="module" src="/assets/scripts/main.js" defer></script>
+		{% if canonical %}
+			<link rel="canonical" href="{{ canonical }}" />
+		{% endif %}
 	</head>
 	<body>
 		{% include "header.njk" %}
