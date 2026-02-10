@@ -25,7 +25,7 @@ Valuarchy does this by leveraging the power of money as both a communication med
 
 {% include "download.njk" %}
 
-Valuarchy is free to download. This introductory works is approximately a one hour read covering concepts and theory and is very approachable. If you wish to support this project, donations are welcome in bitcoin lightning (donation address below), or e-books are available to purchase from Amazon or Apple. If you wish to contact me, you can find the contact details below.
+Valuarchy is free to download. This introductory works is approximately a one hour read covering concepts and theory and is very approachable. If you wish to support this project, donations are welcome in bitcoin lightning (donation address below), or e-books are available to purchase from <a href="https://www.amazon.com/dp/B0GM9QLF83">Amazon</a>. If you wish to contact me, you can find the contact details below.
 
 The book is licenced under Creative Commons and you may copy or redistribute the material in any medium or format, and you may remix, transform, and build upon the material, however you may not use the material for commercial purposes.
 
